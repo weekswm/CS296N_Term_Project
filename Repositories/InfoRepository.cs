@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
+using CS296N_Term_Project.Models;
 
-namespace CS296N_Term_Project.Models
+namespace CS296N_Term_Project.Repostories
 {
     public class InfoRepository : IInfoRepository
     {

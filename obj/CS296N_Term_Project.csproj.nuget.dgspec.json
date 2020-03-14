@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marty\\Documents\\2020W\\CS296N\\CS296N_Term_Project\\CS296N_Term_Project\\CS296N_Term_Project.csproj": {}
+    "C:\\Users\\Marty\\Documents\\2020W\\CS296N\\CS296N_Term_Project\\CS296N_Term_Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marty\\Documents\\2020W\\CS296N\\CS296N_Term_Project\\CS296N_Term_Project\\CS296N_Term_Project.csproj": {
+    "C:\\Users\\Marty\\Documents\\2020W\\CS296N\\CS296N_Term_Project\\CS296N_Term_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marty\\Documents\\2020W\\CS296N\\CS296N_Term_Project\\CS296N_Term_Project\\CS296N_Term_Project.csproj",
+        "projectUniqueName": "C:\\Users\\Marty\\Documents\\2020W\\CS296N\\CS296N_Term_Project\\CS296N_Term_Project.csproj",
         "projectName": "CS296N_Term_Project",
-        "projectPath": "C:\\Users\\Marty\\Documents\\2020W\\CS296N\\CS296N_Term_Project\\CS296N_Term_Project\\CS296N_Term_Project.csproj",
+        "projectPath": "C:\\Users\\Marty\\Documents\\2020W\\CS296N\\CS296N_Term_Project\\CS296N_Term_Project.csproj",
         "packagesPath": "C:\\Users\\Marty\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marty\\Documents\\2020W\\CS296N\\CS296N_Term_Project\\CS296N_Term_Project\\obj\\",
+        "outputPath": "C:\\Users\\Marty\\Documents\\2020W\\CS296N\\CS296N_Term_Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -41,7 +41,19 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.2, )"
+            },
+            "Microsoft.Extensions.Logging": {
               "target": "Package",
               "version": "[3.1.2, )"
             }
