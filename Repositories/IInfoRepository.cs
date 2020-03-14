@@ -9,10 +9,6 @@ namespace CS296N_Term_Project.Repostories
 {
     public interface IInfoRepository
     {
-        /*List<Story> Stories { get; }
-        void AddStory(Story story);
-        Story GetUserStoryByTitle(string title);*/
-
         List<Species> SWSpecies { get; }
         void AddSpecies(Species species);
         Species GetSpeciesBySpeciesName(string speciesName);
