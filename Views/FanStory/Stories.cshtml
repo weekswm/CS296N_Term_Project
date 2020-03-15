@@ -1,0 +1,38 @@
+﻿@model List<FanStory>
+@{
+    ViewData["Title"] = "Stories";
+}
+
+<html>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Star Wars Fan Stories</h1>
+    </div>
+    <div>
+        <br />
+        @foreach (FanStory story in Model)
+        {
+            @story.StoryText; <br />
+            @story.Name; <br />
+            <br />
+            @if (story.Comments.Count > 0)
+            {
+                <h4>@ViewBag.TotalComments Comments</h4>
+                @foreach (Comment c in story.Comments)
+                {
+                    @c.CommentText <br />
+                    @: by:  @c.Commenter <br>
+                }
+                <br />
+            }
+            <div class="col-md-4">
+                <a class="btn btn-primary" asp-action="AddComment" asp-route-title="@story.StoryText">Add a Comment</a>
+            </div><br />
+        }
+        <br />
+        <div class="col-md-4">
+            <a class="btn btn-primary" asp-controller="Story" asp-action="AddStory">Add Your Star Wars Fan Story</a>
+        </div>
+    </div>
+</body>
+</html>

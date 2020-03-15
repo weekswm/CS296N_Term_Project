@@ -1,0 +1,51 @@
+﻿@model Planet
+@{
+    ViewData["Title"] = "ViewPlanet";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ViewPlanet</title>
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">You Chose @Model.PlanetName</h1>
+    </div>
+    <br />
+    <div>
+        <table style="width:100%">
+            <tr>
+                <th>Planet Name</th>
+                <th>Rotational Period (hours)</th>
+                <th>Orbital Period (days)</th>
+                <th>Diameter</th>
+                <th>Climate</th>
+                <th>Gravity (std.)</th>
+            </tr>
+            <tr>
+                <td>
+                    @Model.PlanetName
+                </td>
+                <td>
+                    @Model.RotationalPeriod
+                </td>
+                <td>
+                    @Model.OrbitalPeriod
+                </td>
+                <td>
+                    @Model.Diameter
+                </td>
+                <td>
+                    @Model.Climate
+                </td>
+                <td>
+                    @Model.Gravity
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

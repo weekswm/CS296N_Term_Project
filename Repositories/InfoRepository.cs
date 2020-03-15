@@ -32,11 +32,13 @@ namespace CS296N_Term_Project.Repostories
         //private List<Species> speciesList = new List<Species>();
 
         public List<Species> SWSpecies { get { return context.SWSpecies.ToList(); } }
+
         public void AddSpecies(Species species)
         {
             context.SWSpecies.Add(species);
             context.SaveChanges();
         }
+
         public Species GetSpeciesBySpeciesName(string speciesName)
         {
             Species species = context.SWSpecies.ToList().Find(s => s.SpeciesName == speciesName);

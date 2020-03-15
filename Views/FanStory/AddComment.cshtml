@@ -1,0 +1,50 @@
+﻿@model CommentViewModel;
+@{
+    ViewData["Title"] = "AddComment";
+}
+
+@{
+    Layout = "~/Views/Shared/_AddForms.cshtml";
+}
+
+<html>
+<body>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.0.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validation.unobtrusive/3.2.6/jquery.validate.unobtrusive.min.js"></script>
+
+    <div class="container">
+        <form method="post">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Commenter</label>
+                <div class="col-md-8 inputGroupContainer">
+                    <div class="input-group">
+                        <span asp-validation-for="Commenter"></span>
+                        <input asp-for="Commenter" placeholder="Your Name" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Comment</label>
+                <div class="col-md-12 inputGroupContainer">
+                    <div class="input-group">
+                        <span asp-validation-for="CommentText"></span>
+                        <textarea class="form-control" asp-for="CommentText" name="commentText" placeholder="That sounds epic! ..." rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4">
+                    <br>
+                    <button type="submit" class="btn btn-warning">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
+                </div>
+                <div class="col-md-4">
+                    <br>
+                    <a class="btn btn-primary" asp-controller="Story" asp-action="Stories">Back to Star Wars Fan Stories</a>
+                </div>
+            </div>
+        </form>
+    </div><!-- /.container -->
+</body>
+</html>

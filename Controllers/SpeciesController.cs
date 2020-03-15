@@ -12,99 +12,42 @@ namespace CS296N_Term_Project.Controllers
     public class SpeciesController : Controller
     {
         Species species;
+        Planet planet;
         IInfoRepository repo;
+
         public SpeciesController(IInfoRepository r)
         {
             repo = r;
         }
+
         // GET: Species
+        [ValidateAntiForgeryToken]
         public ViewResult Species()
         {
             List<Species> species = repo.SWSpecies;
             return View(species);
         }
 
+        [ValidateAntiForgeryToken]
         public ViewResult ViewSpecies(string speciesName)
         {
             species = repo.GetSpeciesBySpeciesName(speciesName);
             return View(species);
         }
 
+        // GET: Planets/
+        [ValidateAntiForgeryToken]
         public ViewResult Planet()
         {
             List<Planet> planets = repo.Planets;
             return View(planets);
         }
 
-        // GET: Species/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
-
-        // GET: Species/Create
-        public ActionResult AddSpecies()
-        {
-            return View();
-        }
-
-        // POST: Species/Create
-        [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult AddSpecies(IQueryable<> collection)
+        public ViewResult ViewPlanet(string planetName)
         {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Species/Edit/5
-        public ActionResult EditSpecies(int id)
-        {
-            return View();
-        }
-
-        // POST: Species/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult EditSpecies(int id, IQueryable<> collection)
-        {
-
-        }
-
-        // GET: Species/Edit/5
-        public ActionResult ReplaceSpecies(int id)
-        {
-            return View();
-        }
-
-        // POST: Species/Edit/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult ReplaceSpecies(int id, IQueryable<> collection)
-        {
-
-        }
-
-        // GET: Species/Delete/5
-        public ActionResult DeleteSpecies(int id)
-        {
-            return View();
-        }
-
-        // POST: Species/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteSpecies(int id, IQueryable<> collection)
-        {
-            
+            planet = repo.GetPlanetByName(planetName);
+            return View(planet);
         }
     }
 }
