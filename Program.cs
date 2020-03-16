@@ -21,6 +21,7 @@ namespace CS296N_Term_Project
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                });
+                })
+            .UseDefaultServiceProvider(options => options.ValidateScopes = false);
     }
 }

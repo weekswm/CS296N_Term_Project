@@ -192,3 +192,14 @@ C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.
 C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\FanStory\AddStory.cshtml.g.cs
 C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\FanStory\AddComment.cshtml.g.cs
 C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AddForms.cshtml.g.cs
+C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\CS296N_Term_Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\Account\Logout.cshtml.g.cs
+C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\Account\AccessDenied.cshtml.g.cs
+C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Create.cshtml.g.cs
+C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Edit.cshtml.g.cs
+C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\Admin\Index.cshtml.g.cs
+C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\RoleAdmin\Create.cshtml.g.cs
+C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\RoleAdmin\Edit.cshtml.g.cs
+C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\RoleAdmin\Index.cshtml.g.cs

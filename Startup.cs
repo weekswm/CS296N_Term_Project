@@ -26,7 +26,7 @@ namespace CS296N_Term_Project
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
-        public void ConfigureServices(IServiceCollection services, IWebHostEnvironment env)
+        public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IInfoRepository, InfoRepository>();
             services.AddTransient<IStoryRepository, FanStoryRepository>();
@@ -38,18 +38,8 @@ namespace CS296N_Term_Project
                 // This will tell the browser to prevent transmission of a cookie over an unencrypted HTTP request... hopefully
                 options.Secure = CookieSecurePolicy.Always;
             });
-            if (env.IsDevelopment())
-            {
-                services.AddDbContext<AppDbContext>(options =>
-                options.UseSqlServer(
-                    Configuration["ConnectionStrings:LocalMsSqlConnection"]));
-            }
-            else if (env.IsProduction())
-            {
-                services.AddDbContext<AppDbContext>(options =>
-                    options.UseSqlServer(
-                    Configuration["ConnectionStrings:MsSqlConnection"]));
-            }
+            services.AddDbContext<AppDbContext>(options =>
+                options.UseSqlServer(Configuration["ConnectionStrings:LocalMsSqlConnection"]));
 
             services.AddIdentity<AppUser, IdentityRole>(opts =>
             {
