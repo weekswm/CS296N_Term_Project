@@ -1,0 +1,38 @@
+name,classification,designation,average_height,language,average_lifespan,homeworld
+Hutt,gastropod,sentient,300,Huttese,1000,Nal Hutta
+Yoda's species,mammal,sentient,66,Galactic basic,900,NA
+Trandoshan,reptile,sentient,200,Dosh,NA,Trandosha
+Mon Calamari,amphibian,sentient,160,Mon Calamarian,NA,Mon Cala
+Ewok,mammal,sentient,100,Ewokese,NA,Endor
+Sullustan,mammal,sentient,180,Sullutese,NA,Sullust
+Neimodian,NA,sentient,180,Neimoidia,NA,Cato Neimoidia
+Gungan,amphibian,sentient,190,Gungan basic,NA,Naboo
+Toydarian,mammal,sentient,120,Toydarian,91,Toydaria
+Dug,mammal,sentient,100,Dugese,NA,Malastare
+Twi'lek,mammals,sentient,200,Twi'leki,NA,Ryloth
+Aleena,reptile,sentient,80,Aleena,79,Aleen Minor
+Vulptereen,NA,sentient,100,vulpterish,NA,Vulpter
+Xexto,NA,sentient,125,Xextese,NA,Troiken
+Toong,NA,sentient,200,Tundan,NA,Tund
+Cerean,mammal,sentient,200,Cerean,NA,Cerea
+Nautolan,amphibian,sentient,180,Nautila,70,Glee Anselm
+Zabrak,mammal,sentient,180,Zabraki,NA,Iridonia
+Tholothian,mammal,sentient,NA,NA,NA,Tholoth
+Iktotchi,NA,sentient,180,Iktotchese,NA,Iktotch
+Quermian,mammal,sentient,240,Quermian,86,Quermia
+Kel Dor,NA,sentient,180,Kel Dor,70,Dorin
+Chagrian,amphibian,sentient,190,Chagria,NA,Champala
+Geonosian,insectoid,sentient,178,Geonosian,NA,Geonosis
+Mirialan,mammal,sentient,180,Mirialan,NA,Mirial
+Clawdite,reptilian,sentient,180,Clawdite,70,Zolan
+Besalisk,amphibian,sentient,178,besalisk,75,Ojom
+Kaminoan,amphibian,sentient,220,Kaminoan,80,Kamino
+Skakoan,mammal,sentient,NA,Skakoan,NA,Skako
+Muun,mammal,sentient,190,Muun,100,Muunilinst
+Togruta,mammal,sentient,180,Togruti,94,Shili
+Kaleesh,reptile,sentient,170,Kaleesh,80,Kalee
+Pau'an,mammal,sentient,190,Utapese,700,Utapau
+Wookiee,mammal,sentient,210,Shyriiwook,400,Kashyyyk
+Droid,artificial,sentient,NA,NA,indefinite,NA
+Human,mammal,sentient,180,Galactic Basic,120,Coruscant
+Rodian,sentient,reptilian,170,Galactic Basic,NA,Rodia

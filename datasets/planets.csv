@@ -1,0 +1,62 @@
+name,rotation_period,orbital_period,diameter,climate,gravity
+Alderaan,24,364,12500,temperate,1 standard
+Yavin IV,24,4818,10200,"temperate, tropical",1 standard
+Hoth,23,549,7200,frozen,1.1 standard
+Dagobah,23,341,8900,murky,N/A
+Bespin,12,5110,118000,temperate,"1.5 (surface), 1 standard (Cloud City)"
+Endor,18,402,4900,temperate,0.85 standard
+Naboo,26,312,12120,temperate,1 standard
+Coruscant,24,368,12240,temperate,1 standard
+Kamino,27,463,19720,temperate,1 standard
+Geonosis,30,256,11370,"temperate, arid",0.9 standard
+Utapau,27,351,12900,"temperate, arid, windy",1 standard
+Mustafar,36,412,4200,hot,1 standard
+Kashyyyk,26,381,12765,tropical,1 standard
+Polis Massa,24,590,0,artificial temperate ,0.56 standard
+Mygeeto,12,167,10088,frigid,1 standard
+Felucia,34,231,9100,"hot, humid",0.75 standard
+Cato Neimoidia,25,278,0,"temperate, moist",1 standard
+Saleucami,26,392,14920,hot,NA
+Stewjon,NA,NA,0,temperate,1 standard
+Eriadu,24,360,13490,polluted,1 standard
+Corellia,25,329,11000,temperate,1 standard
+Rodia,29,305,7549,hot,1 standard
+Nal Hutta,87,413,12150,temperate,1 standard
+Dantooine,25,378,9830,temperate,1 standard
+Bestine IV,26,680,6400,temperate,NA
+Ord Mantell,26,334,14050,temperate,1 standard
+NA,0,0,0,NA,NA
+Trandosha,25,371,0,arid,0.62 standard
+Socorro,20,326,0,arid,1 standard
+Mon Cala,21,398,11030,temperate,1
+Chandrila,20,368,13500,temperate,1
+Sullust,20,263,12780,superheated,1
+Toydaria,21,184,7900,temperate,1
+Malastare,26,201,18880,"arid, temperate, tropical",1.56
+Dathomir,24,491,10480,temperate,0.9
+Ryloth,30,305,10600,"temperate, arid, subartic",1
+Aleen Minor,NA,NA,NA,NA,NA
+Vulpter,22,391,14900,"temperate, artic",1
+Troiken,NA,NA,NA,NA,NA
+Tund,48,1770,12190,NA,NA
+Haruun Kal,25,383,10120,temperate,0.98
+Cerea,27,386,NA,temperate,1
+Glee Anselm,33,206,15600,"tropical, temperate",1
+Iridonia,29,413,NA,NA,NA
+Tholoth,NA,NA,NA,NA,NA
+Iktotch,22,481,NA,"arid, rocky, windy",1
+Quermia,NA,NA,NA,NA,NA
+Dorin,22,409,13400,temperate,1
+Champala,27,318,NA,temperate,1
+Mirial,NA,NA,NA,NA,NA
+Serenno,NA,NA,NA,NA,NA
+Concord Dawn,NA,NA,NA,NA,NA
+Zolan,NA,NA,NA,NA,NA
+Ojom,NA,NA,NA,frigid,NA
+Skako,27,384,NA,temperate,1
+Muunilinst,28,412,13800,temperate,1
+Shili,NA,NA,NA,temperate,1
+Kalee,23,378,13850,"arid, temperate, tropical",1
+Umbara,NA,NA,NA,NA,NA
+Tatooine,23,304,10465,arid,1 standard
+Jakku,NA,NA,NA,NA,NA
