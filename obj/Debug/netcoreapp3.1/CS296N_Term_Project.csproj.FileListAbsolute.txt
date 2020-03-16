@@ -184,7 +184,6 @@ C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\bin\Debug\netcoreapp3.
 C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\CS296N_Term_Project.Views.pdb
 C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\CS296N_Term_Project.dll
 C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\CS296N_Term_Project.pdb
-C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\CS296N_Term_Project.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\Species\Species.cshtml.g.cs
 C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\Species\ViewSpecies.cshtml.g.cs
 C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\Species\Planets.cshtml.g.cs
@@ -192,3 +191,4 @@ C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.
 C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\FanStory\Stories.cshtml.g.cs
 C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\FanStory\AddStory.cshtml.g.cs
 C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\FanStory\AddComment.cshtml.g.cs
+C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AddForms.cshtml.g.cs

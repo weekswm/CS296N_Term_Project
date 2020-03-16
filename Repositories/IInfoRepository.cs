@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using CS296N_Term_Project.Models;
 
-namespace CS296N_Term_Project.Repostories
+namespace CS296N_Term_Project.Repositories
 {
     public interface IInfoRepository
     {

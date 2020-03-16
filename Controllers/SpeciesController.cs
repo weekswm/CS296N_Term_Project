@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using CS296N_Term_Project.Models;
-using CS296N_Term_Project.Repostories;
+using CS296N_Term_Project.Repositories;
 
 namespace CS296N_Term_Project.Controllers
 {
