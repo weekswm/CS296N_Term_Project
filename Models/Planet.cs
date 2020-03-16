@@ -11,11 +11,11 @@ namespace CS296N_Term_Project.Models
 
         public int PlanetID { get; set; }
         public string PlanetName { get; set; }
-        public int RotationalPeriod { get; set; }
-        public int OrbitalPeriod { get; set; }
-        public int Diameter { get; set; }
+        public Nullable<int> RotationalPeriod { get; set; }
+        public Nullable<int> OrbitalPeriod { get; set; }
+        public Nullable<int> Diameter { get; set; }
         public string Climate { get; set; }
-        public int Gravity { get; set; }
+        public Nullable<double> Gravity { get; set; }
 
         public List<Planet> Planets { get { return planets; } }
     }

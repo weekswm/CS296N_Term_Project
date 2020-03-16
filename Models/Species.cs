@@ -13,10 +13,10 @@ namespace CS296N_Term_Project.Models
         public string SpeciesName { get; set; }
         public string Classification { get; set; }
         public string Designation { get; set; }
-        public int AvgHeight { get; set; }
+        public Nullable<int> AvgHeight { get; set; }
         public string Language { get; set; }
-        public int AvgLifeSpan { get; set; }
-        public Planet Homeworld { get; set; }
+        public Nullable<int> AvgLifeSpan { get; set; }
+        public string Homeworld { get; set; }
         public object Viewbag { get; }
 
         public List<Species> SWSpecies { get { return speciesList; } }
