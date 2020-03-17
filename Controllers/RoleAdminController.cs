@@ -1,36 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 using CS296N_Term_Project.Models;
 
 namespace CS296N_Term_Project.Controllers
 {
+    [Authorize(Roles = "Admins")]
     public class RoleAdminController : Controller
     {
         private RoleManager<IdentityRole> roleManager;
         private UserManager<AppUser> userManager;
+
         public RoleAdminController(RoleManager<IdentityRole> roleMgr,
-                                    UserManager<AppUser> userMrg)
+            UserManager<AppUser> userMrg)
         {
             roleManager = roleMgr;
             userManager = userMrg;
         }
 
-        public ViewResult Index() => View(roleManager.Roles);
-        public IActionResult CreateRole() => View();
+        public ViewResult Index() => View(roleManager.Roles); 
+        public IActionResult Create() => View();
 
         [HttpPost]
-        public async Task<IActionResult> CreateRole([Required]string name)
+        public async Task<IActionResult> Create([Required]string name)
         {
             if (ModelState.IsValid)
             {
-                IdentityResult result
-                = await roleManager.CreateAsync(new IdentityRole(name));
+                IdentityResult result = await roleManager.CreateAsync(new IdentityRole(name));
                 if (result.Succeeded)
                 {
                     return RedirectToAction("Index");
@@ -44,13 +43,11 @@ namespace CS296N_Term_Project.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> DeleteRole(string id)
+        public async Task<IActionResult> Delete(string id)
         {
-            IdentityRole role = await roleManager.FindByIdAsync(id);
-            if (role != null)
+            IdentityRole role = await roleManager.FindByIdAsync(id); if (role != null)
             {
-                IdentityResult result = await roleManager.DeleteAsync(role);
-                if (result.Succeeded)
+                IdentityResult result = await roleManager.DeleteAsync(role); if (result.Succeeded)
                 {
                     return RedirectToAction("Index");
                 }
@@ -66,15 +63,14 @@ namespace CS296N_Term_Project.Controllers
             return View("Index", roleManager.Roles);
         }
 
-        public async Task<IActionResult> EditRole(string id)
+        public async Task<IActionResult> Edit(string id)
         {
-            IdentityRole role = await roleManager.FindByIdAsync(id);
-            List<AppUser> members = new List<AppUser>();
+            IdentityRole role = await roleManager.FindByIdAsync(id); 
+            List<AppUser> members = new List<AppUser>(); 
             List<AppUser> nonMembers = new List<AppUser>();
             foreach (AppUser user in userManager.Users)
             {
-                var list = await userManager.IsInRoleAsync(user, role.Name)
-                ? members : nonMembers;
+                var list = await userManager.IsInRoleAsync(user, role.Name) ? members : nonMembers;
                 list.Add(user);
             }
             return View(new RoleEditModel
@@ -84,8 +80,9 @@ namespace CS296N_Term_Project.Controllers
                 NonMembers = nonMembers
             });
         }
+
         [HttpPost]
-        public async Task<IActionResult> EditRole(RoleModificationModel model)
+        public async Task<IActionResult> Edit(RoleModificationModel model)
         {
             IdentityResult result;
             if (ModelState.IsValid)
@@ -95,8 +92,7 @@ namespace CS296N_Term_Project.Controllers
                     AppUser user = await userManager.FindByIdAsync(userId);
                     if (user != null)
                     {
-                        result = await userManager.AddToRoleAsync(user,
-                        model.RoleName);
+                        result = await userManager.AddToRoleAsync(user, model.RoleName);
                         if (!result.Succeeded)
                         {
                             AddErrorsFromResult(result);
@@ -105,11 +101,9 @@ namespace CS296N_Term_Project.Controllers
                 }
                 foreach (string userId in model.IdsToDelete ?? new string[] { })
                 {
-                    AppUser user = await userManager.FindByIdAsync(userId);
-                    if (user != null)
+                    AppUser user = await userManager.FindByIdAsync(userId); if (user != null)
                     {
-                        result = await userManager.RemoveFromRoleAsync(user,
-                        model.RoleName);
+                        result = await userManager.RemoveFromRoleAsync(user, model.RoleName);
                         if (!result.Succeeded)
                         {
                             AddErrorsFromResult(result);
@@ -123,9 +117,10 @@ namespace CS296N_Term_Project.Controllers
             }
             else
             {
-                return await EditRole(model.RoleId);
+                return await Edit(model.RoleId);
             }
         }
+
         private void AddErrorsFromResult(IdentityResult result)
         {
             foreach (IdentityError error in result.Errors)
@@ -133,5 +128,6 @@ namespace CS296N_Term_Project.Controllers
                 ModelState.AddModelError("", error.Description);
             }
         }
+
     }
 }

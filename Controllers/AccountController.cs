@@ -9,8 +9,10 @@ using CS296N_Term_Project.Models;
 
 namespace CS296N_Term_Project.Controllers
 {
+    [Authorize]
     public class AccountController : Controller
     {
+        
         private UserManager<AppUser> userManager;
         private SignInManager<AppUser> signInManager;
 
@@ -20,6 +22,7 @@ namespace CS296N_Term_Project.Controllers
             signInManager = signinMgr;
         }
 
+        [AllowAnonymous]
         public IActionResult Login(string returnUrl)
         {
             ViewBag.returnUrl = returnUrl;
@@ -27,6 +30,7 @@ namespace CS296N_Term_Project.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Login(LoginViewModel model, string returnUrl)
         {
@@ -59,6 +63,7 @@ namespace CS296N_Term_Project.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [AllowAnonymous]
         public IActionResult AccessDenied()
         {
             return View();

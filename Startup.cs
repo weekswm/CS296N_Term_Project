@@ -38,7 +38,7 @@ namespace CS296N_Term_Project
                 // This will tell the browser to prevent transmission of a cookie over an unencrypted HTTP request... hopefully
                 options.Secure = CookieSecurePolicy.Always;
             });
-            services.AddDbContext<AppDbContext>(options =>
+            services.AddDbContext<AppIdentityDbContext>(options =>
                 options.UseSqlServer(Configuration["ConnectionStrings:LocalMsSqlConnection"]));
 
             services.AddIdentity<AppUser, IdentityRole>(opts =>
@@ -50,7 +50,7 @@ namespace CS296N_Term_Project
                 opts.Password.RequireUppercase = false;
                 opts.Password.RequireDigit = false;
             })
-                .AddEntityFrameworkStores<AppDbContext>()
+                .AddEntityFrameworkStores<AppIdentityDbContext>()
                 .AddDefaultTokenProviders();
 
 
@@ -59,7 +59,7 @@ namespace CS296N_Term_Project
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, AppDbContext context)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, AppIdentityDbContext context)
         {
             // Addressing X-Content-Type-Options, X-Frame-Options
             app.Use(async (ctx, next) =>
@@ -111,7 +111,7 @@ namespace CS296N_Term_Project
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            AppDbContext.CreateAdminAccount(app.ApplicationServices, Configuration).Wait();
+            AppIdentityDbContext.CreateAdminAccount(app.ApplicationServices, Configuration).Wait();
 
             SeedData.Seed(context);
         }

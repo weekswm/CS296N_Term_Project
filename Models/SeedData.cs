@@ -9,7 +9,7 @@ namespace CS296N_Term_Project.Models
 {
     public class SeedData
     {
-        public static void Seed(AppDbContext context)
+        public static void Seed(AppIdentityDbContext context)
         {
             // add Species data
             if (!context.SWSpecies.Any()) // only do this if it hasn't been done already

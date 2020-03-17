@@ -1,19 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Threading.Tasks;
 
 namespace CS296N_Term_Project.Models
 {
-    public class AppDbContext : IdentityDbContext<AppUser>
+    public class AppIdentityDbContext : IdentityDbContext<AppUser>
     {
-        public AppDbContext(
-            DbContextOptions<AppDbContext> options) : base(options) { }
+        public AppIdentityDbContext(DbContextOptions<AppIdentityDbContext> options)
+            : base(options) { }
         public DbSet<Species> SWSpecies { get; set; }
         public DbSet<Planet> Planets { get; set; }
         public DbSet<FanStory> FanStories { get; set; }

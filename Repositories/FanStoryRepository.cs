@@ -9,8 +9,8 @@ namespace CS296N_Term_Project.Repositories
 {
     public class FanStoryRepository : IStoryRepository
     {
-        private AppDbContext context;
-        public FanStoryRepository(AppDbContext appDbContext)
+        private AppIdentityDbContext context;
+        public FanStoryRepository(AppIdentityDbContext appDbContext)
         {
             context = appDbContext;
         }

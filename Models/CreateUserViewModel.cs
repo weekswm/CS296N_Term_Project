@@ -9,11 +9,14 @@ namespace CS296N_Term_Project.Models
 {
     public class CreateModel
     {
-        [Required]
+        [Required(ErrorMessage = "You must provide a name.")]
         public string Name { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "You must provide an email.")]
+        [EmailAddress]
         public string Email { get; set; }
-        [Required]
+
+        [Required(ErrorMessage = "You must provide a password.")]
         public string Password { get; set; }
     }
 
