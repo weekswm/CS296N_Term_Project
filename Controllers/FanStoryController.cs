@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CS296N_Term_Project.Controllers
 {
+    [Authorize(Roles = "Member")]
     public class FanStoryController : Controller
     {
         IStoryRepository repo;
@@ -20,6 +21,7 @@ namespace CS296N_Term_Project.Controllers
         }
 
         // GET: FanStories
+        [AllowAnonymous]
         public IActionResult Stories()
         {
             List<FanStory> fanStories = repo.FanStories;
