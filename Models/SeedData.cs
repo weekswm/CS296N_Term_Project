@@ -438,7 +438,7 @@ namespace CS296N_Term_Project.Models
                 context.Planets.Add(planet);
                 Planet planet2 = new Planet()
                 {
-                    PlanetName = "Yavin IV",
+                    PlanetName = "Yavin_IV",
                     RotationalPeriod = 24,
                     OrbitalPeriod = 4818,
                     Diameter = 10200,
@@ -558,7 +558,7 @@ namespace CS296N_Term_Project.Models
                 context.Planets.Add(planet13);
                 Planet planet14 = new Planet()
                 {
-                    PlanetName = "Polis Massa",
+                    PlanetName = "Polis_Massa",
                     RotationalPeriod = 24,
                     OrbitalPeriod = 590,
                     Diameter = null,
@@ -588,7 +588,7 @@ namespace CS296N_Term_Project.Models
                 context.Planets.Add(planet16);
                 Planet plane17 = new Planet()
                 {
-                    PlanetName = "Cato Neimoidia",
+                    PlanetName = "Cato_Neimoidia",
                     RotationalPeriod = 25,
                     OrbitalPeriod = 278,
                     Diameter = null,
@@ -648,7 +648,7 @@ namespace CS296N_Term_Project.Models
                 context.Planets.Add(planet22);
                 Planet planet23 = new Planet()
                 {
-                    PlanetName = "Nal Hutta",
+                    PlanetName = "Nal_Hutta",
                     RotationalPeriod = 87,
                     OrbitalPeriod = 413,
                     Diameter = 12150,
@@ -668,7 +668,7 @@ namespace CS296N_Term_Project.Models
                 context.Planets.Add(planet24);
                 Planet planet25 = new Planet()
                 {
-                    PlanetName = "Bestine IV",
+                    PlanetName = "Bestine_IV",
                     RotationalPeriod = 26,
                     OrbitalPeriod = 680,
                     Diameter = 6400,
@@ -678,7 +678,7 @@ namespace CS296N_Term_Project.Models
                 context.Planets.Add(planet25);
                 Planet planet26 = new Planet()
                 {
-                    PlanetName = "Ord Mantell",
+                    PlanetName = "Ord_Mantell",
                     RotationalPeriod = 26,
                     OrbitalPeriod = 680,
                     Diameter = 14050,
@@ -708,7 +708,7 @@ namespace CS296N_Term_Project.Models
                 context.Planets.Add(planet28);
                 Planet planet29 = new Planet()
                 {
-                    PlanetName = "Mon Cala",
+                    PlanetName = "Mon_Cala",
                     RotationalPeriod = 21,
                     OrbitalPeriod = 398,
                     Diameter = 11030,
@@ -798,7 +798,7 @@ namespace CS296N_Term_Project.Models
                 context.Planets.Add(plane37);
                 Planet planet38 = new Planet()
                 {
-                    PlanetName = "Haruun Kal",
+                    PlanetName = "Haruun_Kal",
                     RotationalPeriod = 25,
                     OrbitalPeriod = 383,
                     Diameter = 10120,
@@ -818,7 +818,7 @@ namespace CS296N_Term_Project.Models
                 context.Planets.Add(planet39);
                 Planet planet40 = new Planet()
                 {
-                    PlanetName = "Glee Anselm",
+                    PlanetName = "Glee_Anselm",
                     RotationalPeriod = 33,
                     OrbitalPeriod = 206,
                     Diameter = 15600,
@@ -838,7 +838,7 @@ namespace CS296N_Term_Project.Models
                 context.Planets.Add(planet41);
                 Planet planet42 = new Planet()
                 {
-                    PlanetName = "Glee Dorin",
+                    PlanetName = "Glee_Dorin",
                     RotationalPeriod = 22,
                     OrbitalPeriod = 409,
                     Diameter = 13400,

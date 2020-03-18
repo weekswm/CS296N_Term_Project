@@ -26,8 +26,22 @@ using CS296N_Term_Project.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dde818e5a8de2768d6eda8f0d8967c1e573b9e24", @"/Views/FanStory/Stories.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5646b0045c3f70fe67d596547010b0809a6d4a69", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"351ab850daebc7c95ed538839efcd298577a7b93", @"/Views/_ViewImports.cshtml")]
     public class Views_FanStory_Stories : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<FanStory>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-primary"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -68,7 +82,7 @@ using CS296N_Term_Project.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<html>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dde818e5a8de2768d6eda8f0d8967c1e573b9e244753", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dde818e5a8de2768d6eda8f0d8967c1e573b9e245163", async() => {
                 WriteLiteral("\r\n    <div class=\"text-center\">\r\n        <h1 class=\"display-4\">Star Wars Fan Stories</h1>\r\n    </div>\r\n    <div>\r\n        <br />\r\n");
 #nullable restore
 #line 13 "C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\Views\FanStory\Stories.cshtml"
@@ -168,7 +182,7 @@ using CS296N_Term_Project.Models;
 #line hidden
 #nullable disable
                 WriteLiteral("            <div class=\"col-md-4\">\r\n                ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dde818e5a8de2768d6eda8f0d8967c1e573b9e248209", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dde818e5a8de2768d6eda8f0d8967c1e573b9e248619", async() => {
                     WriteLiteral("Add a Comment");
                 }
                 );
@@ -208,7 +222,7 @@ using CS296N_Term_Project.Models;
 #line hidden
 #nullable disable
                 WriteLiteral("        <br />\r\n        <div class=\"col-md-4\">\r\n            ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dde818e5a8de2768d6eda8f0d8967c1e573b9e2410918", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dde818e5a8de2768d6eda8f0d8967c1e573b9e2411328", async() => {
                     WriteLiteral("Add Your Star Wars Fan Story");
                 }
                 );

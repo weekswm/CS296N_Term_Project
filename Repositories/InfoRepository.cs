@@ -9,12 +9,12 @@ namespace CS296N_Term_Project.Repositories
 {
     public class InfoRepository : IInfoRepository
     {
-        private AppDbContext context;
-        public InfoRepository(AppDbContext appDbContext)
+        private AppIdentityDbContext context;
+        public InfoRepository(AppIdentityDbContext appDbContext)
         {
             context = appDbContext;
         }
-        private List<Planet> planets = new List<Planet>();
+        //private List<Planet> planets = new List<Planet>();
 
         public List<Planet> Planets { get { return context.Planets.ToList(); } }
         public void AddPlanet(Planet planet)
@@ -23,9 +23,9 @@ namespace CS296N_Term_Project.Repositories
             context.SaveChanges();
         }
 
-        public Planet GetPlanetByName(string name)
+        public Planet GetPlanetByName(string planetName)
         {
-            Planet planet = planets.Find(p => p.PlanetName == name);
+            Planet planet = context.Planets.ToList().Find(p => p.PlanetName == planetName);
             return planet;
         }
 

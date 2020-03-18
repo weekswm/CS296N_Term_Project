@@ -15,6 +15,6 @@ namespace CS296N_Term_Project.Repositories
 
         List<Planet> Planets { get; }
         void AddPlanet(Planet planet);
-        Planet GetPlanetByName(string name);
+        Planet GetPlanetByName(string planetName);
     }
 }

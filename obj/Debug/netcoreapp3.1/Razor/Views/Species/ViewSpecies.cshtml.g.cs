@@ -26,8 +26,22 @@ using CS296N_Term_Project.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\Views\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Mvc.TagHelpers;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b107965470bca16deb73515f4adb35f474fe75e7", @"/Views/Species/ViewSpecies.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5646b0045c3f70fe67d596547010b0809a6d4a69", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"351ab850daebc7c95ed538839efcd298577a7b93", @"/Views/_ViewImports.cshtml")]
     public class Views_Species_ViewSpecies : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Species>
     {
         #line hidden
@@ -64,7 +78,7 @@ using CS296N_Term_Project.Models;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b107965470bca16deb73515f4adb35f474fe75e73532", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b107965470bca16deb73515f4adb35f474fe75e73942", async() => {
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>ViewSpecies</title>\r\n");
             }
             );
@@ -78,7 +92,7 @@ using CS296N_Term_Project.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b107965470bca16deb73515f4adb35f474fe75e74597", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b107965470bca16deb73515f4adb35f474fe75e75007", async() => {
                 WriteLiteral("\r\n    <div class=\"text-center\">\r\n        <h1 class=\"display-4\">You Chose ");
 #nullable restore
 #line 15 "C:\Users\Marty\Documents\2020W\CS296N\CS296N_Term_Project\Views\Species\ViewSpecies.cshtml"

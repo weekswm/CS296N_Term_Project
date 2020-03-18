@@ -21,14 +21,12 @@ namespace CS296N_Term_Project.Controllers
         }
 
         // GET: Species
-        [ValidateAntiForgeryToken]
         public ViewResult Species()
         {
             List<Species> species = repo.SWSpecies;
             return View(species);
         }
 
-        [ValidateAntiForgeryToken]
         public ViewResult ViewSpecies(string speciesName)
         {
             species = repo.GetSpeciesBySpeciesName(speciesName);
@@ -36,14 +34,12 @@ namespace CS296N_Term_Project.Controllers
         }
 
         // GET: Planets/
-        [ValidateAntiForgeryToken]
         public ViewResult Planet()
         {
             List<Planet> planets = repo.Planets;
             return View(planets);
         }
 
-        [ValidateAntiForgeryToken]
         public ViewResult ViewPlanet(string planetName)
         {
             planet = repo.GetPlanetByName(planetName);

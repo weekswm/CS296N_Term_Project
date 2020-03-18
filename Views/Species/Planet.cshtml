@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewData["Title"] = "Planet";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Planet</title>
+</head>
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Planets of Star Wars</h1>
+    </div>
+    <br />
+    <h4>Below is a list of all of the planets in the Star Wars Universe that we currently have data on. Choose any one to learn more about it!</h4>
+    <br />
+    <div class="dropdown-container">
+        <form method="get" asp-action="ViewPlanet">
+            <div class="form-group">
+                <label class="col-md-4 control-label">Select Planet</label>
+                <select class="form-control" name="planetName">
+                    <option value="Alderaan">Alderaan</option>
+                    <option value="Yavin_IV">Yavin IV</option>
+                    <option value="Hoth">Hoth</option>
+                    <option value="Dagobah">Dagobah</option>
+                    <option value="Bespin">Bespin</option>
+                    <option value="Endor">Endor</option>
+                    <option value="Naboo">Naboo</option>
+                    <option value="Coruscant">Coruscant</option>
+                    <option value="Geonosis">Geonosis</option>
+                    <option value="Utapau">Utapau</option>
+                    <option value="Mustafar">Mustafar</option>
+                    <option value="Kashyyyk">Kashyyyk</option>
+                    <option value="Polis_Massa">Polis Massa</option>
+                    <option value="Mygeeto">Mygeeto</option>
+                    <option value="Felucia">Felucia</option>
+                    <option value="Cato_Neimoidia">Cato Neimoidia</option>
+                    <option value="Saleucami">Saleucami</option>
+                    <option value="Stewjon">Stewjon</option>
+                    <option value="Corellia">Corellia</option>
+                    <option value="Eriadu">Eriadu</option>
+                    <option value="Rodia">Rodia</option>
+                    <option value="Nal_Hutta">Nal Hutta</option>
+                    <option value="Dantooine">Dantooine</option>
+                    <option value="Bestine_IV">Bestine IV</option>
+                    <option value="Ord_Mantell">Ord Mantell</option>
+                    <option value="Trandosha">Trandosha</option>
+                    <option value="Socorro">Socorro</option>
+                    <option value="Mon_Cala">Mon Cala</option>
+                    <option value="Chandrila">Chandrila</option>
+                    <option value="Sullust">Sullust</option>
+                    <option value="Toydariaa">Toydaria</option>
+                    <option value="Malastare">Malastare</option>
+                    <option value="Tatooine">Tatooine</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label"></label>
+                <div class="col-md-4">
+                    <button input type="submit" class="btn btn-warning">submit</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

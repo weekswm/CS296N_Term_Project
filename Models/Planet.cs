@@ -16,6 +16,7 @@ namespace CS296N_Term_Project.Models
         public Nullable<int> Diameter { get; set; }
         public string Climate { get; set; }
         public Nullable<double> Gravity { get; set; }
+        public object Viewbag { get; }
 
         public List<Planet> Planets { get { return planets; } }
     }

@@ -110,6 +110,7 @@ namespace CS296N_Term_Project
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+            context.Database.Migrate();
 
             AppIdentityDbContext.CreateAdminAccount(app.ApplicationServices, Configuration).Wait();
 
