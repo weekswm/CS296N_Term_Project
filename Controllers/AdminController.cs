@@ -30,7 +30,7 @@ namespace CS296N_Term_Project.Controllers
 
         public ViewResult Index() => View(userManager.Users);
 
-        public ViewResult CreateUser() => View();
+        public ViewResult Create() => View();
 
         /* *************************** *
          * User account administration *
