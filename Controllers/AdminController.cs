@@ -39,7 +39,7 @@ namespace CS296N_Term_Project.Controllers
         // Action methods that modify the database
 
         [HttpPost]
-        public async Task<IActionResult> CreateUser(CreateModel model)
+        public async Task<IActionResult> Create(CreateModel model)
         {
             if (ModelState.IsValid)
             {
@@ -66,7 +66,7 @@ namespace CS296N_Term_Project.Controllers
             return View(model);
         }
         [HttpPost]
-        public async Task<IActionResult> DeleteUser(string id)
+        public async Task<IActionResult> Delete(string id)
         {
             AppUser user = await userManager.FindByIdAsync(id);
             if (user != null)
@@ -88,7 +88,7 @@ namespace CS296N_Term_Project.Controllers
             return View("Index", userManager.Users);
         }
 
-        public async Task<IActionResult> EditUser(string id)
+        public async Task<IActionResult> Edit(string id)
         {
             AppUser user = await userManager.FindByIdAsync(id);
             if (user != null)
@@ -102,7 +102,7 @@ namespace CS296N_Term_Project.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> EditUser(string id, string email,
+        public async Task<IActionResult> Edit(string id, string email,
                 string password)
         {
             AppUser user = await userManager.FindByIdAsync(id);
